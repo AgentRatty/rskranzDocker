@@ -19,6 +19,6 @@ RUN chmod 644 /etc/shiny-server/shiny-server.conf
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-  libv8-3.14-dev 
+  libv8-3.14.5 
 COPY install.r /tmp/install.r
 RUN Rscript /tmp/install.r
